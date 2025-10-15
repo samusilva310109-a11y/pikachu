@@ -7,13 +7,21 @@ body{
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
+    padding: 70px ;
 }
-header{
-    
+header{ 
+    display:flex;
+    gap: 16px;
+}
+header span{
+    font-size: 32px;
+    color: var(--secundary-color);
+    font-family: Righteous, sans-serif;
 }
 main{
-   flex-grow: 1;
+    flex-grow: 1;
 }
 footer{
     
 }
+
