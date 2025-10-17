@@ -109,8 +109,27 @@ footer{
 }
 /*Mobile*/
 @media(max-width: 480px){
-    body{
-      
+    .descricao p{
+        display: none;
+    }
+    .container{
+        transform: translate(0, 30%);
+    }
+    .pikachu{
+        height: 50vh;
+    }
+    .sombra{
+        transform: translate(-50%, -220% );
+    }
+    h1{
+        transform: translate(0, -25%);
+    }
+    .descricao h2 {
+        font-size: 38px;
+    }
+    .container a {
+        width: 100%;
+        
     }
 }
 
