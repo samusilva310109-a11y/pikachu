@@ -26,7 +26,7 @@ main{
 }
 .sombra{
     position: absolute;
-    font-size: 400px;
+    font-size: 29vw;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -35,15 +35,16 @@ main{
 }
 h1{
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 20vw;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .container{
     color: var(--secundary-color);
-    height: 154px;
+    height: auto;
     padding-bottom: 75px;
     display: flex;
     align-items: flex-end;
@@ -66,14 +67,50 @@ h1{
     align-items: center;
     justify-content: center;
 }
+.descricao{
+    z-index: 1;
+}
 .pikachu{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+   
 }
 footer{
     color: var(--secundary-color);
     text-align: center;
+}
+/*Tablet*/
+@media (max-width: 1024px){
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    main{
+        
+    }
+    .sombra{
+        transform: translate(-50%,-180%);
+    }
+    h1{
+        transform: translate(0%,-30%);
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    footer{
+        display: none;
+    }
+}
+/*Mobile*/
+@media(max-width: 480px){
+    body{
+      
+    }
 }
 
